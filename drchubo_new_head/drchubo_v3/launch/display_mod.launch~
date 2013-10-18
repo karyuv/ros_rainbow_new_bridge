@@ -1,0 +1,29 @@
+<launch>
+ 
+
+
+<group ns="robot">
+<param name="tf_prefix" value="hubo"/>
+ <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+ <param
+    name="robot/robot_description"
+    textfile="$(find drchubo_v3)/robots/drchubo_v3.urdf" />
+
+<node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" />
+
+<node name="robot_state_publisher" pkg="robot_state_publisher"
+type="state_publisher" />
+</group>
+  
+
+
+
+
+</launch>

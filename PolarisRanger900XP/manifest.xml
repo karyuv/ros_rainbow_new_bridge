@@ -1,0 +1,6 @@
+<package>
+  <description brief="PolarisRanger900XP">PolarisRanger900XP</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

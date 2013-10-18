@@ -1,0 +1,16 @@
+<launch>
+
+<ar name="model" />
+	<arg name="gui" default="False" />
+       <param name="robot_description" textfile="$(find drchubo_v3)/robots/drchubo_v3.urdf"/>
+
+<node name="odom_node" pkg="hubo_state_publisher" type="odom_node" />
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> 
+        
+<!--<node pkg="tf" type="static_transform_publisher" name="world" args="0.2 0 0 0 0 0 world odom 100" />-->
+<node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find drchubo_v3)/urdf.rviz" />
+</launch>

@@ -1,0 +1,122 @@
+joints:
+- LWY
+- LWR
+- LWP
+- LHP
+- LAR
+- NK1
+- NK2
+- LAP
+- TSY
+- LKP
+- RF3
+- RF2
+- RF1
+- RKP
+- RF5
+- RF4
+- LSR
+- RAP
+- RAR
+- REP
+- LSY
+- LSP
+- LF5
+- LF4
+- LF1
+- LHR
+- LF3
+- LF2
+- LHY
+- RHY
+- RHP
+- RHR
+- RWP
+- LEP
+- RWR
+- RSY
+- NKY
+- RWY
+- RSP
+- RSR
+mapping:
+  LAP:
+    huboachid: 23
+  LAR:
+    huboachid: 24
+  LEP:
+    huboachid: 7
+  LF1:
+    huboachid: 37
+  LF2:
+    huboachid: 38
+  LF3:
+    huboachid: 39
+  LF4:
+    huboachid: 40
+  LF5:
+    huboachid: 41
+  LHP:
+    huboachid: 21
+  LHR:
+    huboachid: 20
+  LHY:
+    huboachid: 19
+  LKP:
+    huboachid: 22
+  LSP:
+    huboachid: 4
+  LSR:
+    huboachid: 5
+  LSY:
+    huboachid: 6
+  LWP:
+    huboachid: 10
+  LWR:
+    huboachid: 9
+  LWY:
+    huboachid: 8
+  NK1:
+    huboachid: 2
+  NK2:
+    huboachid: 3
+  NKY:
+    huboachid: 1
+  RAP:
+    huboachid: 30
+  RAR:
+    huboachid: 31
+  REP:
+    huboachid: 14
+  RF1:
+    huboachid: 32
+  RF2:
+    huboachid: 33
+  RF3:
+    huboachid: 34
+  RF4:
+    huboachid: 35
+  RF5:
+    huboachid: 36
+  RHP:
+    huboachid: 28
+  RHR:
+    huboachid: 27
+  RHY:
+    huboachid: 26
+  RKP:
+    huboachid: 29
+  RSP:
+    huboachid: 11
+  RSR:
+    huboachid: 12
+  RSY:
+    huboachid: 13
+  RWP:
+    huboachid: 17
+  RWR:
+    huboachid: 16
+  RWY:
+    huboachid: 15
+  TSY:
+    huboachid: 0

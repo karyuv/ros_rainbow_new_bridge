@@ -1,0 +1,6 @@
+<package>
+  <description brief="hubo_head_description">hubo_head_description</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

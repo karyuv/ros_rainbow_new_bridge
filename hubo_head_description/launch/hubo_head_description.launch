@@ -1,0 +1,36 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="True" />
+  <arg
+    name="publish_joints"
+    default="False" />
+  <param
+    name="robot_head_description"
+    textfile="$(find hubo_head_description)/robots/hubo_head_description.URDF" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node if="$(arg publish_joints)"
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" >
+    <remap from="robot_description" to="robot_head_description" />
+    <remap from="joint_states" to="/hubo/head_joint_states" />
+  </node>
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" >
+    <remap from="robot_description" to="robot_head_description" />
+    <remap from="joint_states" to="/hubo/head_joint_states" />
+  </node>
+<!--  <node name="body_to_head_tf_publisher" pkg="tf" type="static_transform_publisher" args="0.03 0 -0.03 0.07 0.04 0 /Body_NKY /head_base_link 100" />
+/-->
+<node name="body_to_head_tf_publisher" pkg="tf" type="static_transform_publisher" args="0 0 -0.03 0.05 0.04 0 /Body_NKY /head_base_link 100" />
+
+  <node name="camera_tf_publisher" pkg="tf" type="static_transform_publisher" args="0 0.06 0 0 0 0 /ps_lower_base_link /camera_link 100" />
+  <node name="lidar_tilt_to_lider_tf_publisher" pkg="tf" type="static_transform_publisher" args="0 0.035 0 0 3.14 -1.57 /lidar_tilt_link /lidar_link 100" />
+</launch>
