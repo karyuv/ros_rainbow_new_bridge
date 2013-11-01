@@ -52,9 +52,9 @@ ros::Rate loop_rate(100);
 // message declarations
 geometry_msgs::TransformStamped odom_trans;
 odom_trans.header.frame_id = "odom";
-odom_trans.child_frame_id = "polaris_base";
-joint_state.name.resize(1);
-joint_state.position.resize(1);
+odom_trans.child_frame_id = "vehicle_base";
+joint_state.name.resize(2);
+joint_state.position.resize(2);
    
 
 
@@ -70,14 +70,14 @@ odom_trans.transform.translation.y=0;
 odom_trans.transform.translation.z=-1;
 odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0);
 broadcaster.sendTransform(odom_trans);
+
 joint_state.header.stamp = ros::Time::now();
 a=0;
-
 //Assign the encoder variable of the actual robot to the virtual model's joint value.
-joint_state.header.stamp = ros::Time::now();
-joint_state.name[0] ="polaris_move";
+joint_state.name[0] ="vehicle_move";
 joint_state.position[0]=a;
-
+joint_state.name[1] ="STW";
+joint_state.position[1]=a;
 
 joint_pub.publish(joint_state);
     

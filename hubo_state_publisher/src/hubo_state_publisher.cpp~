@@ -41,7 +41,58 @@ std::string enco_read;
 ros::Publisher joint_pub;
 sensor_msgs::JointState joint_state;
 
-
+#define LSR 0
+#define LSY 1
+#define LEP 2
+#define LWY 3
+#define LWP 4
+#define LAP 5
+#define LAR 6
+#define LHP 7
+#define LHR 8
+#define LHY 9
+#define LKP 10
+#define LWR 11
+#define NKY 12
+#define RAP 13
+#define RAR 14
+#define REP 15
+#define RHP 16
+#define RHR 17
+#define RHY 18
+#define RKP 19
+#define RSP 20
+#define RSR 21
+#define RSY 22
+#define RWP 23
+#define RWR 24
+#define RWY 25
+#define LF32 26
+#define NK1 27
+#define NK2 28
+#define RF13 29
+#define RF12 30
+#define TSY 31
+#define RF31 32
+#define RF32 33
+#define RF2 34
+#define RF1 35
+#define RF22 36
+#define RF23 37
+#define RF21 38
+#define RF42 39
+#define RF43 40
+#define LF21 41
+#define LF22 42
+#define LF23 43
+#define LF1 44
+#define LF31 45
+#define LF12 46
+#define LF33 47
+#define LF11 48
+#define LF13 49
+#define RF33 50
+#define LSP 51
 
 
 void hubo_callback()
@@ -51,177 +102,170 @@ joint_state.header.stamp = ros::Time::now();
 a=0;
 
 //Assign the encoder variable of the actual robot to the virtual model's joint value.
-joint_state.name[0] ="LSR";
-joint_state.position[0]=joint_values[8];
+joint_state.name[LSR] ="LSR";
+joint_state.position[LSR]=joint_values[8];
 
-joint_state.name[1] ="LSY";
-joint_state.position[1]=joint_values[9];
+joint_state.name[LSY] ="LSY";
+joint_state.position[LSY]=joint_values[9];
 
-joint_state.name[2] ="LEP";
-joint_state.position[2]=joint_values[10];
+joint_state.name[LEP] ="LEP";
+joint_state.position[LEP]=joint_values[10];
 
-joint_state.name[3] ="LWY";
-joint_state.position[3]=joint_values[11];
+joint_state.name[LWY] ="LWY";
+joint_state.position[LWY]=joint_values[11];
 
-joint_state.name[4] ="LWP";
-joint_state.position[4]=joint_values[12];
-
-
-joint_state.name[5] ="LAP";
-joint_state.position[5]=joint_values[22];
+joint_state.name[LWP] ="LWP";
+joint_state.position[LWP]=joint_values[12];
 
 
-joint_state.name[6] ="LAR";
-joint_state.position[6]=joint_values[23];
+joint_state.name[LAP] ="LAP";
+joint_state.position[LAP]=joint_values[22];
 
 
-joint_state.name[7] ="LHP";
-joint_state.position[7]=joint_values[14];
-
-joint_state.name[8] ="LHR";
-joint_state.position[8]=joint_values[15];
-
-joint_state.name[9] ="LHY";
-joint_state.position[9]=joint_values[18];
-
-joint_state.name[10] ="LKP";
-joint_state.position[10]=joint_values[21];
-
-joint_state.name[11] ="LWR";
-joint_state.position[11]=a;
-
-joint_state.name[12] ="NKY";
-joint_state.position[12]=a;
-
-joint_state.name[13] ="RAP";
-joint_state.position[13]=joint_values[24];
+joint_state.name[LAR] ="LAR";
+joint_state.position[LAR]=joint_values[23];
 
 
-joint_state.name[14] ="RAR";
-joint_state.position[14]=joint_values[25];
+joint_state.name[LHP] ="LHP";
+joint_state.position[LHP]=joint_values[14];
 
-joint_state.name[15] ="REP";
-joint_state.position[15]=joint_values[3];
+joint_state.name[LHR] ="LHR";
+joint_state.position[LHR]=joint_values[15];
 
-joint_state.name[16] ="RHP";
-joint_state.position[16]=joint_values[16];
+joint_state.name[LHY] ="LHY";
+joint_state.position[LHY]=joint_values[18];
 
-joint_state.name[17] ="RHR";
-joint_state.position[17]=joint_values[17];
+joint_state.name[LKP] ="LKP";
+joint_state.position[LKP]=joint_values[21];
 
-joint_state.name[18] ="RHY";
-joint_state.position[18]=joint_values[19];
+joint_state.name[LWR] ="LWR";
+joint_state.position[LWR]=a;
 
-joint_state.name[19] ="RKP";
-joint_state.position[19]=joint_values[20];
+joint_state.name[NKY] ="NKY";
+joint_state.position[NKY]=a;
 
-joint_state.name[20] ="RSP";
-joint_state.position[20]=joint_values[0];
-
-joint_state.name[21] ="RSR";
-joint_state.position[21]=joint_values[1];
-
-joint_state.name[22] ="RSY";
-joint_state.position[22]=joint_values[2];
-
-joint_state.name[23] ="RWP";
-joint_state.position[23]=joint_values[5];
-
-joint_state.name[24] ="RWR";
-joint_state.position[24]=a;
-
-joint_state.name[25] ="RWY";
-joint_state.position[25]=joint_values[4];
+joint_state.name[RAP] ="RAP";
+joint_state.position[RAP]=joint_values[24];
 
 
-joint_state.name[26] ="LF32";
-joint_state.position[26]=a;
+joint_state.name[RAR] ="RAR";
+joint_state.position[RAR]=joint_values[25];
 
-joint_state.name[27] ="NK1";
-joint_state.position[27]=a;
+joint_state.name[REP] ="REP";
+joint_state.position[REP]=joint_values[3];
 
-joint_state.name[28] ="NK2";
-joint_state.position[28]=a;
+joint_state.name[RHP] ="RHP";
+joint_state.position[RHP]=joint_values[16];
 
-joint_state.name[29] ="RF13";
-joint_state.position[29]=a;
+joint_state.name[RHR] ="RHR";
+joint_state.position[RHR]=joint_values[17];
 
-joint_state.name[30] ="RF12";
-joint_state.position[30]=a;
+joint_state.name[RHY] ="RHY";
+joint_state.position[RHY]=joint_values[19];
 
-joint_state.name[31] ="TSY";
-joint_state.position[31]=a;
+joint_state.name[RKP] ="RKP";
+joint_state.position[RKP]=joint_values[20];
 
-joint_state.name[32] ="RF31";
-joint_state.position[32]=a;
+joint_state.name[RSP] ="RSP";
+joint_state.position[RSP]=joint_values[0];
 
+joint_state.name[RSR] ="RSR";
+joint_state.position[RSR]=joint_values[1];
 
-joint_state.name[33] ="RF32";
-joint_state.position[33]=a;
+joint_state.name[RSY] ="RSY";
+joint_state.position[RSY]=joint_values[2];
 
-joint_state.name[34] ="RF2";
-joint_state.position[34]=a;
+joint_state.name[RWP] ="RWP";
+joint_state.position[RWP]=joint_values[5];
 
-joint_state.name[35] ="RF1";
-joint_state.position[35]=a;
+joint_state.name[RWR] ="RWR";
+joint_state.position[RWR]=a;
 
-joint_state.name[36] ="RF22";
-joint_state.position[36]=a;
-
-joint_state.name[37] ="RF23";
-joint_state.position[37]=a;
-
-joint_state.name[38] ="RF21";
-joint_state.position[38]=a;
+joint_state.name[RWY] ="RWY";
+joint_state.position[RWY]=joint_values[4];
 
 
-joint_state.name[39] ="RF42";
-joint_state.position[39]=a;
+joint_state.name[LF32] ="LF32";
+joint_state.position[LF32]=a;
 
-joint_state.name[40] ="RF43";
-joint_state.position[40]=a;
+joint_state.name[NK1] ="NK1";
+joint_state.position[NK1]=a;
 
+joint_state.name[NK2] ="NK2";
+joint_state.position[NK2]=a;
 
-joint_state.name[41] ="RF2";
-joint_state.position[41]=a;
+joint_state.name[RF13] ="RF13";
+joint_state.position[RF13]=a;
 
-joint_state.name[42] ="RF1";
-joint_state.position[42]=a;
+joint_state.name[RF12] ="RF12";
+joint_state.position[RF12]=a;
 
-joint_state.name[43] ="LF21";
-joint_state.position[43]=a;
+joint_state.name[TSY] ="TSY";
+joint_state.position[TSY]=a;
 
-joint_state.name[44] ="LF22";
-joint_state.position[44]=a;
-
-joint_state.name[45] ="LF23";
-joint_state.position[45]=a;
-
-joint_state.name[46] ="LF1";
-joint_state.position[46]=a;
-
-joint_state.name[47] ="LF31";
-joint_state.position[47]=a;
-
-joint_state.name[48] ="LF12";
-joint_state.position[48]=a;
+joint_state.name[RF31] ="RF31";
+joint_state.position[RF31]=a;
 
 
-joint_state.name[49] ="LF33";
-joint_state.position[49]=a;
+joint_state.name[RF32] ="RF32";
+joint_state.position[RF32]=a;
 
-joint_state.name[50] ="LF11";
-joint_state.position[50]=a;
+joint_state.name[RF2] ="RF2";
+joint_state.position[RF2]=a;
+
+joint_state.name[RF1] ="RF1";
+joint_state.position[RF1]=a;
+
+joint_state.name[RF22] ="RF22";
+joint_state.position[RF22]=a;
+
+joint_state.name[RF23] ="RF23";
+joint_state.position[RF23]=a;
+
+joint_state.name[RF21] ="RF21";
+joint_state.position[RF21]=a;
 
 
-joint_state.name[51] ="LF13";
-joint_state.position[51]=a;
+joint_state.name[RF42] ="RF42";
+joint_state.position[RF42]=a;
 
-joint_state.name[52] ="RF33";
-joint_state.position[52]=a;
+joint_state.name[RF43] ="RF43";
+joint_state.position[RF43]=a;
 
-joint_state.name[53] ="LSP";
-joint_state.position[53]=joint_values[7];
+joint_state.name[LF21] ="LF21";
+joint_state.position[LF21]=a;
+
+joint_state.name[LF22] ="LF22";
+joint_state.position[LF22]=a;
+
+joint_state.name[LF23] ="LF23";
+joint_state.position[LF23]=a;
+
+joint_state.name[LF1] ="LF1";
+joint_state.position[LF1]=a;
+
+joint_state.name[LF31] ="LF31";
+joint_state.position[LF31]=a;
+
+joint_state.name[LF12] ="LF12";
+joint_state.position[LF12]=a;
+
+
+joint_state.name[LF33] ="LF33";
+joint_state.position[LF33]=a;
+
+joint_state.name[LF11] ="LF11";
+joint_state.position[LF11]=a;
+
+
+joint_state.name[LF13] ="LF13";
+joint_state.position[LF13]=a;
+
+joint_state.name[RF33] ="RF33";
+joint_state.position[RF33]=a;
+
+joint_state.name[LSP] ="LSP";
+joint_state.position[LSP]=joint_values[7];
 
 
 
@@ -262,8 +306,8 @@ geometry_msgs::TransformStamped odom_trans;
     
 
    
-joint_state.name.resize(54);
-joint_state.position.resize(54);
+joint_state.name.resize(52);
+joint_state.position.resize(52);
 string sub;
 int init=1;
 int diff;
