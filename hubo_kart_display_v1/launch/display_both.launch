@@ -1,0 +1,39 @@
+<launch>
+ 
+
+
+
+<group ns= "vehicle">
+
+<arg name="model" />
+ <arg name="gui" default="True" />
+<param name="robot_description" textfile="$(find hubo_kart_display_v1)/robots/PolarisRanger900XP.URDF" />
+<node name="odom_vehicle_node" pkg="hubo_state_publisher" type="odom_vehicle_node" />
+<node name="robot_state_publisher" pkg="robot_state_publisher"
+type="state_publisher" />
+
+</group>
+
+
+
+<group ns="robot">
+
+ <arg name="model" />
+  <arg name="gui"  default="False" />
+ <param name="robot_description" textfile="$(find hubo_kart_display_v1)/robots/drchubo_new_head.urdf" />
+<node name="odom_robot_node" pkg="hubo_state_publisher" type="odom_robot_node" />
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> 
+</group>
+
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+args="-d $(find hubo_kart_display_v1)/launch/polaris_hubo.rviz" />
+
+
+
+
+</launch>
+
+

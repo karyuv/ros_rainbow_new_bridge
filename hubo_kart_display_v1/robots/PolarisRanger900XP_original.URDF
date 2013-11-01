@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<robot
+  name="PolarisRanger900XP">
+ 
+  <!-- <link name="polaris_plane">
+   <inertial>
+            <mass value="0.0"/>
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+        </inertial>
+    </link>-->
+
+  
+<link
+    name="Chassis">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/polarischassis.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="2 1 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/polarischassis.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+<!--<joint name="Polaris_Move" type="planar">
+        <parent link="polaris_plane"/>
+        <child link="Chassis"/>
+        <origin rpy="0 0 0" xyz="0.0 0 0.0"/>
+        <axis xyz="0 0 1.0"/>
+        
+    </joint>-->
+
+</robot>

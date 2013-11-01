@@ -1,0 +1,91 @@
+<robot
+  name="PolarisRanger900XP">
+ 
+
+<link name="vehicle_base">
+    <visual>
+      <geometry>
+        <cylinder length="0.0" radius="0.0"/>
+      </geometry>
+    </visual>
+  </link>
+ 
+  <!-- Polaris chassis (main link) -->
+  <link
+    name="Chassis">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/polarischassis.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/polarischassis.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="vehicle_move" type="planar">
+        <parent link="vehicle_base"/>
+        <child link="Chassis"/>
+        <origin rpy="0 0 0" xyz="0.0 0 0.0"/>
+        <axis xyz="0 0 1.0"/>
+         <limit effort="25" lower="-1.06813521904" upper="1.06814778541" velocity="6.28318530718"/>
+    </joint>
+  <!-- Steering wheel link -->
+  <link
+    name="SteeringWheel">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/steeringwheel.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PolarisRanger900XP/meshes/steeringwheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Steering wheel rotation joint.
+       There's probably an upper and lower rotation limit
+	   but just allow it to rotate freely. -->
+  <joint
+	name="STW"
+	type="continuous">
+	<origin
+	  xyz="0.267992 0.394955 1.01608"
+	  rpy="0 -0.898844 0" /> <!-- Change pitch value to change steering wheel pitch -->
+	<parent
+	  link="Chassis" />
+	<child
+	  link="SteeringWheel" />
+	<axis
+	  xyz="0 0 1" />
+  </joint>
+</robot>
