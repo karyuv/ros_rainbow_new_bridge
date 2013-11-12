@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="drchubo_v3">
+<robot name="hubo_kart_display_v1">
 
 <link name="hubo_base">
     <visual>
@@ -13,7 +13,7 @@
     <link name="Body_TSY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_TSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_TSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -22,7 +22,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_TSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_TSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -44,7 +44,7 @@
     <link name="Body_Torso">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_Torso_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_Torso_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -53,7 +53,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_Torso_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_Torso_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -73,7 +73,7 @@
     <link name="Body_RHY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -82,7 +82,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -102,7 +102,7 @@
     <link name="Body_RHR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -111,7 +111,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -131,7 +131,7 @@
     <link name="Body_RHP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -140,7 +140,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RHP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RHP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -160,7 +160,7 @@
     <link name="Body_RKP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RKP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RKP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -169,7 +169,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RKP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RKP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -189,7 +189,7 @@
     <link name="Body_RAP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RAP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RAP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -198,7 +198,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RAP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RAP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -218,7 +218,7 @@
     <link name="Body_RAR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RAR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RAR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -227,7 +227,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RAR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RAR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -259,7 +259,7 @@
     <link name="Body_RSP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -268,7 +268,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -288,7 +288,7 @@
     <link name="Body_RSR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -297,7 +297,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -317,7 +317,7 @@
     <link name="Body_RSY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -326,7 +326,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -346,7 +346,7 @@
     <link name="Body_REP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_REP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_REP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -355,7 +355,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_REP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_REP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -375,7 +375,7 @@
     <link name="Body_RWY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -384,7 +384,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -404,7 +404,7 @@
     <link name="Body_RWP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -413,7 +413,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -433,7 +433,7 @@
     <link name="Body_RWR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -442,7 +442,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RWR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RWR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -472,426 +472,17 @@
         <origin rpy="0 0 -1.57079632679" xyz="0.1 0 0"/>
     </joint>
 
-<link
-    name="head_base_link">
-    <inertial>
-      <origin
-        xyz="2.3304978183754E-18 -4.99430308017913E-19 0.00499999999999999"
-        rpy="0 0 0" />
-      <mass
-        value="0.0222146018366026" />
-      <inertia
-        ixx="3.12556116400805E-06"
-        ixy="-3.6189151799195E-22"
-        ixz="-7.38039080574315E-24"
-        iyy="6.70889449734138E-06"
-        iyz="-6.4074231160126E-22"
-        izz="9.46421229740605E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/head_base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/head_base_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-    
 
-    <joint name="NKY" type="revolute">
-        <parent link="Body_Torso"/>
-        <child link="head_base_link"/>
-        <origin rpy="0 0 0" xyz="0 -1.0274e-05 0.0585"/>
-        <axis xyz="0 0 1.0"/>
-        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="6.28318530718"/>
-    </joint>
-
- <link
-    name="turret_pan_link">
-    <inertial>
-      <origin
-        xyz="-0.0121822334071311 2.70384781147317E-06 0.0433637013389467"
-        rpy="0 0 0" />
-      <mass
-        value="0.111664559813447" />
-      <inertia
-        ixx="7.85176777304885E-05"
-        ixy="9.83689607173052E-10"
-        ixz="9.58070869887956E-06"
-        iyy="7.70484870395042E-05"
-        iyz="7.18576738195685E-11"
-        izz="6.84694193153644E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/turret_pan_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/turret_pan_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="turret_pan"
-    type="continuous">
-    <origin
-      xyz="0 0 0"
-      rpy="0 0 0" />
-    <parent
-      link="head_base_link" />
-    <child
-      link="turret_pan_link" />
-    <axis
-      xyz="0 0 1" />
-  </joint>
-  <link
-    name="turret_tilt_link">
-    <inertial>
-      <origin
-        xyz="-0.00734470869783893 -0.000922567349659617 0.0676763329728171"
-        rpy="0 0 0" />
-      <mass
-        value="0.953306948960365" />
-      <inertia
-        ixx="0.00469179439631725"
-        ixy="0.000196132307637545"
-        ixz="-0.000470692746776285"
-        iyy="0.00388386160583068"
-        iyz="0.000254653139531593"
-        izz="0.00321268464679288" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/turret_tilt_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.866666666666667 0.909803921568627 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/turret_tilt_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="turret_tilt"
-    type="continuous">
-    <origin
-      xyz="0 0 0.081"
-      rpy="0 0 0" />
-    <parent
-      link="turret_pan_link" />
-    <child
-      link="turret_tilt_link" />
-    <axis
-      xyz="0 1 0" />
-  </joint>
-  <link
-    name="lidar_tilt_link">
-    <inertial>
-      <origin
-        xyz="-0.000451739713036539 0.00142068072982725 0.0095378406254539"
-        rpy="0 0 0" />
-      <mass
-        value="0.277440816169479" />
-      <inertia
-        ixx="0.000287641113004078"
-        ixy="-2.12281230788968E-07"
-        ixz="-2.79974835499033E-07"
-        iyy="0.000278108111077794"
-        iyz="-5.64059773108329E-07"
-        izz="0.000168611601516652" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/lidar_tilt_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/lidar_tilt_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="lidar_tilt"
-    type="continuous">
-    <origin
-      xyz="0.062 0 0.03636"
-      rpy="0 0 0" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="lidar_tilt_link" />
-    <axis
-      xyz="0 1 0" />
-  </joint>
-  <link
-    name="lidar_optical_frame" />
-  <joint
-    name="lidar_optical_link"
-    type="fixed">
-    <origin
-      xyz="0 0.00134999999999998 0.032"
-      rpy="0 0 0" />
-    <parent
-      link="lidar_tilt_link" />
-    <child
-      link="lidar_optical_frame" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="camera_l_link">
-    <inertial>
-      <origin
-        xyz="0.00514229232434571 3.13965923078446E-05 -0.000183606189112423"
-        rpy="0 0 0" />
-      <mass
-        value="0.059130842653584" />
-      <inertia
-        ixx="8.2699233854617E-06"
-        ixy="-7.22497182350792E-08"
-        ixz="6.15615294955095E-07"
-        iyy="4.27928696441055E-05"
-        iyz="1.26762308242955E-08"
-        izz="4.2762321740079E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="camera_l"
-    type="fixed">
-    <origin
-      xyz="0.040455 0.088675 0.14036"
-      rpy="0 0 0" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="camera_l_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="camera_c_link">
-    <inertial>
-      <origin
-        xyz="0.00514229222132032 3.13965917268962E-05 -0.000183606196061697"
-        rpy="0 0 0" />
-      <mass
-        value="0.0591308427749407" />
-      <inertia
-        ixx="8.26992338690152E-06"
-        ixy="-7.22497165061013E-08"
-        ixz="6.15615315572638E-07"
-        iyy="4.27928699512976E-05"
-        iyz="1.26762309361678E-08"
-        izz="4.276232204585E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="camera_c"
-    type="fixed">
-    <origin
-      xyz="0.040455 0.028675 0.14036"
-      rpy="0 0 0" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="camera_c_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="camera_r_link">
-    <inertial>
-      <origin
-        xyz="0.00514229219892091 3.13965916506204E-05 -0.000183606197523695"
-        rpy="0 0 0" />
-      <mass
-        value="0.0591308428004722" />
-      <inertia
-        ixx="8.26992338720286E-06"
-        ixy="-7.22497162707901E-08"
-        ixz="6.15615320049058E-07"
-        iyy="4.2792870020323E-05"
-        iyz="1.26762309508922E-08"
-        izz="4.27623221145749E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://hubo_head_description/meshes/flea_camera.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="camera_r"
-    type="fixed">
-    <origin
-      xyz="0.040455 -0.091325 0.14036"
-      rpy="0 0 0" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="camera_r_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="ps_lower_base_link" />
-  <joint
-    name="ps_lower_base"
-    type="fixed">
-    <origin
-      xyz="-0.067789086884583 -0.00132499999999999 0.120355390601482"
-      rpy="8.13589349446095E-16 0.747175452778788 -3.14159265358979" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="ps_lower_base_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="ps_upper_base_link" />
-  <joint
-    name="ps_upper_base"
-    type="fixed">
-    <origin
-      xyz="-0.068045 -0.00132499999999995 0.170176213379847"
-      rpy="5.96858314644388E-16 1.04083408558608E-15 3.14159265358979" />
-    <parent
-      link="turret_tilt_link" />
-    <child
-      link="ps_upper_base_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-
-
+ 
+  
+  
+ 
+ 
        
     <link name="Body_RF41">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -900,7 +491,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -920,7 +511,7 @@
     <link name="Body_RF42">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -929,7 +520,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -949,7 +540,7 @@
     <link name="Body_RF43">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -958,7 +549,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -978,7 +569,7 @@
     <link name="Body_RF11">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -987,7 +578,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1007,7 +598,7 @@
     <link name="Body_RF12">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1016,7 +607,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1036,7 +627,7 @@
     <link name="Body_RF13">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1045,7 +636,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1065,7 +656,7 @@
     <link name="Body_RF21">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1074,7 +665,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1094,7 +685,7 @@
     <link name="Body_RF22">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1103,7 +694,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1123,7 +714,7 @@
     <link name="Body_RF23">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1132,7 +723,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1152,7 +743,7 @@
     <link name="Body_RF31">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1161,7 +752,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1181,7 +772,7 @@
     <link name="Body_RF32">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1190,7 +781,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1210,7 +801,7 @@
     <link name="Body_RF33">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1219,7 +810,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_RF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_RF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1239,7 +830,7 @@
     <link name="Body_LSP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1248,7 +839,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1261,7 +852,7 @@
     <link name="Body_LSR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1270,7 +861,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1283,7 +874,7 @@
     <link name="Body_LSY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1292,7 +883,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LSY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LSY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1305,7 +896,7 @@
     <link name="Body_LEP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LEP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LEP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1314,7 +905,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LEP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LEP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1327,7 +918,7 @@
     <link name="Body_LWY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1336,7 +927,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1349,7 +940,7 @@
     <link name="Body_LWP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1358,7 +949,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1371,7 +962,7 @@
     <link name="Body_LWR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1380,7 +971,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LWR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LWR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1454,7 +1045,7 @@
     <link name="Body_LHY">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1463,7 +1054,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHY_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHY_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1476,7 +1067,7 @@
     <link name="Body_LHR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1485,7 +1076,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1498,7 +1089,7 @@
     <link name="Body_LHP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1507,7 +1098,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LHP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LHP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1520,7 +1111,7 @@
     <link name="Body_LKP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LKP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LKP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1529,7 +1120,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LKP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LKP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1542,7 +1133,7 @@
     <link name="Body_LAP">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LAP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LAP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1551,7 +1142,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LAP_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LAP_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1564,7 +1155,7 @@
     <link name="Body_LAR">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LAR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LAR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1573,7 +1164,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LAR_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LAR_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1644,7 +1235,7 @@
     <link name="Body_LF11">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1653,7 +1244,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1666,7 +1257,7 @@
     <link name="Body_LF12">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1675,7 +1266,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1688,7 +1279,7 @@
     <link name="Body_LF13">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1697,7 +1288,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1731,7 +1322,7 @@
     <link name="Body_LF21">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1740,7 +1331,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1753,7 +1344,7 @@
     <link name="Body_LF22">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1762,7 +1353,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1775,7 +1366,7 @@
     <link name="Body_LF23">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1784,7 +1375,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1818,7 +1409,7 @@
     <link name="Body_LF31">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1827,7 +1418,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF11.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF11.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1840,7 +1431,7 @@
     <link name="Body_LF32">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1849,7 +1440,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF12_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF12_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>
@@ -1862,7 +1453,7 @@
     <link name="Body_LF33">
         <visual>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <material name="">
@@ -1871,7 +1462,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://drchubo_v3/meshes/convhull_LF13_merged.stl"/>
+                <mesh filename="package://hubo_kart_display_v1/meshes/convhull_LF13_merged.stl"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </collision>

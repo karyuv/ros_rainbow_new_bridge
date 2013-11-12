@@ -17,7 +17,9 @@
 #include<iomanip>
 #include <sys/ioctl.h>
 #include <sstream>
-
+#include <std_msgs/Float32MultiArray.h>
+#include "std_msgs/MultiArrayLayout.h"
+#include "std_msgs/MultiArrayDimension.h"
 //THE DEFAULT PORT TO RECEIVE THE ENCODER VALUES
 #define SERVER_PORT     8088
 
@@ -26,13 +28,14 @@ using namespace std;
 //declaring the global variables
 stringstream ss;
 int sd,rc,i;
-float joint_values[27];
+float joint_values[39];
 float a=0.0;
 float b=0.0;
-char buffer[350];
+char buffer[850];
 string encoder,encoder_1;
 int s;
-
+std_msgs::Float32MultiArray ft;
+ros::Publisher ft_pub;
 //define a non-blocking socket,hence not waiting to recieve data.
 unsigned long nonblocking=1;
 
@@ -94,6 +97,45 @@ sensor_msgs::JointState joint_state;
 #define RF33 50
 #define LSP 51
 
+#define lfft_x 27
+#define lfft_y 28
+#define lfft_z 29
+
+#define rfft_x 30
+#define rfft_y 31
+#define rfft_z 32
+
+#define lhwnd_x 33
+#define lhwnd_y 34
+#define lhwnd_z 35
+
+#define rhwnd_x 36
+#define rhwnd_y 37
+#define rhwnd_z 38
+
+
+
+
+void ft_callback()
+{
+
+ft.data.clear();
+ft.data.push_back(joint_values[lfft_x]);
+ft.data.push_back(joint_values[lfft_y]);
+ft.data.push_back(joint_values[lfft_z]);
+ft.data.push_back(joint_values[rfft_x]);
+ft.data.push_back(joint_values[rfft_y]);
+ft.data.push_back(joint_values[rfft_z]);
+ft.data.push_back(joint_values[lhwnd_x]);
+ft.data.push_back(joint_values[lhwnd_y]);
+ft.data.push_back(joint_values[lhwnd_z]);
+ft.data.push_back(joint_values[rhwnd_x]);
+ft.data.push_back(joint_values[rhwnd_y]);
+ft.data.push_back(joint_values[rhwnd_z]);
+ft_pub.publish(ft);
+
+
+}
 
 void hubo_callback()
 {
@@ -141,8 +183,7 @@ joint_state.position[LKP]=joint_values[21];
 joint_state.name[LWR] ="LWR";
 joint_state.position[LWR]=a;
 
-joint_state.name[NKY] ="NKY";
-joint_state.position[NKY]=a;
+
 
 joint_state.name[RAP] ="RAP";
 joint_state.position[RAP]=joint_values[24];
@@ -188,11 +229,7 @@ joint_state.position[RWY]=joint_values[4];
 joint_state.name[LF32] ="LF32";
 joint_state.position[LF32]=a;
 
-joint_state.name[NK1] ="NK1";
-joint_state.position[NK1]=a;
 
-joint_state.name[NK2] ="NK2";
-joint_state.position[NK2]=a;
 
 joint_state.name[RF13] ="RF13";
 joint_state.position[RF13]=a;
@@ -269,6 +306,8 @@ joint_state.position[LSP]=joint_values[7];
 
 
 
+
+
 joint_pub.publish(joint_state);
 
 
@@ -283,6 +322,7 @@ int main(int argc, char** argv) {
 ros::init(argc, argv, "hubo_state_publisher");
 ros::NodeHandle n;
 joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
+ft_pub = n.advertise<std_msgs::Float32MultiArray>("ft_hand_leg", 1000);
 tf::TransformBroadcaster broadcaster;
 ros::Rate loop_rate(100);
 
@@ -294,6 +334,11 @@ serveraddr.sin_addr.s_addr = htonl(INADDR_ANY); //make sure to provide this rath
 int n_0=0,n_1=0;
 int size=sizeof(serveraddr);   
 
+//define the base link of the robot
+geometry_msgs::TransformStamped odom_trans;
+odom_trans.header.frame_id = "odom";
+odom_trans.child_frame_id = "hubo_base";
+
 //define your socket
 sd = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 ioctl(sd,FIONBIO,&nonblocking);
@@ -302,18 +347,17 @@ socklen_t serveraddrlen =sizeof(serveraddr);
 
 
 // message declarations
-geometry_msgs::TransformStamped odom_trans;
-    
-
-   
 joint_state.name.resize(52);
 joint_state.position.resize(52);
 string sub;
 int init=1;
 int diff;
+
     while (ros::ok()) {
 
 
+
+//recieve the UDP packets from the hubo computer
 rc = recvfrom(sd, buffer, sizeof(buffer), 0,
                     (struct sockaddr *)&serveraddr, 
                     &serveraddrlen);
@@ -321,10 +365,12 @@ encoder=(string)buffer;
 init=1;
 n_0=0;
 n_1=0;
+
+//check if they are empty packets
 if(encoder.length()!=0)
 {
 //Parse the recieved encoder data.
-for(i=0;i<27;i++)
+for(i=0;i<39;i++)
 {
 n_1=encoder.find('*',n_0);
 diff=n_1-init;
@@ -335,23 +381,23 @@ n_0=n_1+1;
 encoder_1=" ";
 
 //update the position
-odom_trans.header.frame_id = "odom";
-odom_trans.child_frame_id = "Body_Torso";
-odom_trans.transform.translation.x=1;
-odom_trans.transform.translation.y=1;
-odom_trans.transform.translation.z=1;
+std::cout<<"\n encoder:"<<encoder;
+odom_trans.header.stamp=ros::Time::now();
+odom_trans.transform.translation.x=0.0;
+odom_trans.transform.translation.y=-1.6;
+odom_trans.transform.translation.z=0;
 odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0);
 broadcaster.sendTransform(odom_trans);
-std::cout<<"\n encoder:"<<encoder;
-hubo_callback();  
+hubo_callback(); 
+ft_callback(); 
 }
 encoder=" ";
 }
-    
+   
 ros::spinOnce();
 loop_rate.sleep();
 }
 
 
     return 0;
-}
+}8

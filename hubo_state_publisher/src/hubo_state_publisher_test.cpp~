@@ -148,8 +148,7 @@ joint_state.position[LKP]=a;
 joint_state.name[LWR] ="LWR";
 joint_state.position[LWR]=a;
 
-joint_state.name[NKY] ="NKY";
-joint_state.position[NKY]=0.4;
+
 
 joint_state.name[RAP] ="RAP";
 joint_state.position[RAP]=a;
@@ -195,11 +194,6 @@ joint_state.position[RWY]=a;
 joint_state.name[LF32] ="LF32";
 joint_state.position[LF32]=a;
 
-joint_state.name[NK1] ="NK1";
-joint_state.position[NK1]=a;
-
-joint_state.name[NK2] ="NK2";
-joint_state.position[NK2]=a;
 
 joint_state.name[RF13] ="RF13";
 joint_state.position[RF13]=a;
@@ -274,32 +268,9 @@ joint_state.position[RF33]=a;
 joint_state.name[LSP] ="LSP";
 joint_state.position[LSP]=a;
 
-joint_state.name[turret_pan]="turret_pan";
-joint_state.position[turret_pan]=a;
-
-joint_state.name[turret_tilt]="turret_tilt";
-joint_state.position[turret_tilt]=a;
 
 
-joint_state.name[lidar_tilt]="lidar_tilt";
-joint_state.position[lidar_tilt]=a;
 
-
-joint_state.name[lidar_optical_link]="lidar_optical_link";
-joint_state.position[lidar_optical_link]=a;
-
-
-joint_state.name[camera_l]="camera_l";
-joint_state.position[camera_l]=a;
-
-joint_state.name[camera_c]="camera_c";
-joint_state.position[camera_c]=a;
-
-joint_state.name[camera_r]="camera_r";
-joint_state.position[camera_r]=a;
-
-joint_state.name[ps_lower_base]="ps_lower_base";
-joint_state.position[ps_lower_base]=a;
 
 joint_pub.publish(joint_state);
 
@@ -331,7 +302,7 @@ joint_state.position.resize(60);
 
     while (ros::ok()) {
 
-b=b+0.001;
+
 
 
 //update the position
