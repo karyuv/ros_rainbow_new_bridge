@@ -379,7 +379,7 @@ init=n_1+1;
 joint_values[i]=std::atof(encoder_1.c_str());
 n_0=n_1+1;
 encoder_1=" ";
-
+ }
 //update the position
 std::cout<<"\n encoder:"<<encoder;
 odom_trans.header.stamp=ros::Time::now();
@@ -390,7 +390,7 @@ odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0);
 broadcaster.sendTransform(odom_trans);
 hubo_callback(); 
 ft_callback(); 
-}
+
 encoder=" ";
 }
    
